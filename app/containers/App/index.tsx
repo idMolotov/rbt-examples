@@ -19,6 +19,8 @@ import Header from 'components/Header';
 import Footer from 'components/Footer';
 
 import GlobalStyle from '../../global-styles';
+import NewPage from 'containers/NewPage';
+import SecondPage from 'containers/SecondPage';
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -42,6 +44,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
+        <Route path="/new-page" component={NewPage} />
+        <Route path="/second-page" component={SecondPage} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer />

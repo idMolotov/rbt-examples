@@ -21,6 +21,12 @@ function Header() {
         <HeaderLink to="/features">
           <FormattedMessage {...messages.features} />
         </HeaderLink>
+        <HeaderLink to="/new-page">
+          new page
+        </HeaderLink>
+        <HeaderLink to="/second-page">
+          second page
+        </HeaderLink>
       </NavBar>
     </div>
   );
